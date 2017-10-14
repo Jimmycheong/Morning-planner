@@ -22,7 +22,7 @@ export TFL_API_KEY=<your app key>
 Go to a suitable directory (e.g Documents, Desktop) and run the following commands:
 
 ```
-git clone https://github.com/Jimmycheong/TFL-journey-planner.git
+git clone https://github.com/Jimmycheong/tfl-journey-planner.git
 cd TFL-journey-planner
 
 virtualenv env
