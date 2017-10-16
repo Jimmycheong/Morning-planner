@@ -1,4 +1,4 @@
-var weatherAPIID = "72a38109d4fb03336f714390ec0d577a";
+var weatherAPIID = $('#component').attr('data-weather-key')
 var cityID = "6058560"
 var weather_api_string = "http://api.openweathermap.org/data/2.5/forecast?id="+cityID+"&APPID="+weatherAPIID
 

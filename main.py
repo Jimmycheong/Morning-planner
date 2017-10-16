@@ -16,10 +16,12 @@ app = Flask(__name__)
 def index():
     app_id = os.environ['TFL_API_ID']
     app_key = os.environ['TFL_API_KEY']
+    weather_key = os.environ['WEATHER_API_KEY']
     return render_template(
         "index.html",
         app_id=app_id,
-        app_key=app_key
+        app_key=app_key,
+        weather_key=weather_key
     )
 
 @app.errorhandler(404)
