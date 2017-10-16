@@ -4,7 +4,7 @@ var componentStyle = {
 }
 
 var host_url = "https://api.tfl.gov.uk/"
-var stopID = "490001171G"
+var stopID = "490004090S"
 
 var app_id = $('#component').attr('data-app-id')
 var app_key = $('#component').attr('data-app-key')
@@ -13,7 +13,7 @@ var api_string = host_url+"StopPoint/"+stopID+"/arrivals/?app_id="+app_id+"&app_
 
 console.log(api_string)
 
-class Component extends React.Component {
+class BusArrival extends React.Component {
   constructor(props){
     super(props)
     this.state = {
@@ -130,7 +130,10 @@ class Component extends React.Component {
 ReactDOM.render(
 <div className="row">
   <div className="col s6">
-    <Component name="Component 1"/>
+    <BusArrival name="Component 1"/>
+  </div>
+  <div className="col s6">
+    <Weather />
   </div>
 </div>,
 document.getElementById('component')
